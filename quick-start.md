@@ -22,8 +22,6 @@ export const snowball = new Snowball(smartWallet);
 
 ## Turnkey and Alchemy AA
 
-...
-
 ## Lit Protocol  and Fun.xyz
 
 ...
