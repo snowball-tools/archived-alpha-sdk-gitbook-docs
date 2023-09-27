@@ -4,10 +4,10 @@
 
 {% code fullWidth="false" %}
 ```sh
-npm i @snowballtools/snowball-ts-auth
+npm i @snowballtools/snowball-ts-sdk
 ```
 {% endcode %}
 
 ```sh
-yarn add @snowballtools/snowball-ts-auth
+yarn add @snowballtools/snowball-ts-sdk
 ```
