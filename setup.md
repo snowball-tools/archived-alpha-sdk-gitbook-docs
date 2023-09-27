@@ -11,11 +11,3 @@ npm i @snowballtools/snowball-ts-auth
 ```sh
 yarn add @snowballtools/snowball-ts-auth
 ```
-
-## Usage
-
-```typescript
-import { SnowballAuth } from '@snowballtools/snowball-ts-auth';
-
-const snowball = SnowballAuth('token');
-```
