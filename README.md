@@ -12,6 +12,9 @@ npm i @snowballtools/snowball-ts-sdk
 yarn add @snowballtools/snowball-ts-sdk
 ```
 
-
-
 ### Request an [Snowball API Key](https://forms.gle/UFVR5mxx7EqKyNR39)
+
+### Currently, Snowball SDK supports
+
+* Lit Protocol Passkeys
+* Alchemy AA SDK + Paymasters
