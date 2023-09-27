@@ -24,9 +24,7 @@
 ## Account Abstraction
 
 * [Alchemy](account-abstraction/alchemy/README.md)
-  * [aa-sdk](account-abstraction/alchemy/aa-sdk.md)
-  * [Bundler](account-abstraction/alchemy/bundler.md)
-  * [Paymaster](account-abstraction/alchemy/paymaster.md)
+  * [Smart Wallet](account-abstraction/alchemy/smart-wallet.md)
 * [Fun.xyz](account-abstraction/fun.xyz.md)
 
 ## On and Off Ramping
