@@ -6,6 +6,8 @@ description: Create a dapp using Snowballs SDK
 
 ## Lit Protocol and Alchemy AA
 
+> NOTE: Snowball will handle key generation in our next iteration
+
 {% code overflow="wrap" lineNumbers="true" %}
 ```typescript
 import {
