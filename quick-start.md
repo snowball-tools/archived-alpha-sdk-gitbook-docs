@@ -43,8 +43,18 @@ export const snowball = new Snowball(
 ```
 {% endcode %}
 
-## Turnkey and Alchemy AA
+Methods:
 
-## Lit Protocol  and Fun.xyz
-
-...
+{% code overflow="wrap" lineNumbers="true" %}
+```typescript
+register(username: string): Promise<void>; // passkey
+authenticate(): Promise<void>; // passkey
+getEthersWallet(): Promise<PKPEthersWallet>;
+changeChain(chain: Chain): void;
+sendUserOperation(targetAddress: Address, data: Address, sponsorGas: Boolean): Promise<{ hash: string; }>
+getAddress(): Promise<Address>; // smart wallet (incl counterfactual)
+waitForUserOperationTransaction(hash: Hash): Promise<Hash>;
+getUserOperationByHash(hash: Hash): Promise<UserOperationResponse>;
+getUserOperationReceipt(hash: Hash): Promise<UserOperationReceipt>;
+```
+{% endcode %}
