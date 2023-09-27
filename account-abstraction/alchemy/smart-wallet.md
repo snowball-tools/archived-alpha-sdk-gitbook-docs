@@ -1,7 +1,5 @@
 # Smart Wallet
 
-
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```typescript
 sendUserOperation(targetAddress: Address, data: Address, sponsorGas: Boolean) => Promise<{ hash: string; }>
@@ -12,7 +10,7 @@ getUserOperationReceipt: (hash: Hash) => Promise<UserOperationReceipt>;
 ```
 {% endcode %}
 
-#### Needs testing,
+#### By end of week (needs testing),
 
 ```typescript
 sendTransaction: (request: RpcTransactionRequest) => Promise<Hash>;
