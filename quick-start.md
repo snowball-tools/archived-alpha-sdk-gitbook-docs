@@ -14,7 +14,7 @@ import {
   AuthProvider,
   SmartWalletProvider,
   AlchemySmartWalletProviderKey,
-} from "@snowballtools/snowball-ts-auth";
+} from "@snowballtools/snowball-ts-sdk";
 import {
   ALCHEMY_GOERLI_API_KEY,
   ALCHEMY_GOERLI_GAS_POLICY_ID,
