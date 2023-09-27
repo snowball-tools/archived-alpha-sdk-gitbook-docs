@@ -1,7 +1,6 @@
 # Table of contents
 
-* [\[Alpha\] Snowball Typescript SDK](README.md)
-* [Setup](setup.md)
+* [Setup](README.md)
 * [Quick Start](quick-start.md)
 * [Example Dapps](example-dapps.md)
 
