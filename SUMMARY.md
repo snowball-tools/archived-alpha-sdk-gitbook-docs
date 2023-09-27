@@ -25,7 +25,8 @@
 
 * [Alchemy](account-abstraction/alchemy/README.md)
   * [Smart Wallet](account-abstraction/alchemy/smart-wallet.md)
-* [Fun.xyz](account-abstraction/fun.xyz.md)
+* [Fun.xyz](account-abstraction/fun.xyz/README.md)
+  * [Smart Wallet](account-abstraction/fun.xyz/smart-wallet.md)
 
 ## On and Off Ramping
 
