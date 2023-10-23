@@ -25,7 +25,7 @@ import {
 } from "./env";
 
 export const snowball = new Snowball(
-  "snowball-api-key", 
+  "snowball-test",
   CHAINS.goerli,
   {
     name: AuthProvider.lit,
@@ -33,11 +33,11 @@ export const snowball = new Snowball(
   {
     name: SmartWalletProvider.alchemy,
     apiKeys: {
-      [AlchemySmartWalletProviderKey.goerli]: ALCHEMY_GOERLI_API_KEY,
-      [AlchemySmartWalletProviderKey.goerli_gasPolicyId]:
+      [AlchemySmartWalletProviderKey.ethereumGoerli]: ALCHEMY_GOERLI_API_KEY,
+      [AlchemySmartWalletProviderKey.ethereumGoerli_gasPolicyId]:
         ALCHEMY_GOERLI_GAS_POLICY_ID,
-      [AlchemySmartWalletProviderKey.sepolia]: ALCHEMY_SEPOLIA_API_KEY,
-      [AlchemySmartWalletProviderKey.sepolia_gasPolicyId]:
+      [AlchemySmartWalletProviderKey.ethereumSepolia]: ALCHEMY_SEPOLIA_API_KEY,
+      [AlchemySmartWalletProviderKey.ethereumSepolia_gasPolicyId]:
         ALCHEMY_SEPOLIA_GAS_POLICY_ID,
     },
   }
@@ -60,3 +60,28 @@ getUserOperationByHash(hash: Hash): Promise<UserOperationResponse>;
 getUserOperationReceipt(hash: Hash): Promise<UserOperationReceipt>;
 ```
 {% endcode %}
+
+Possible errors:[​](https://developer.litprotocol.com/v3/migration/overview/#using-nextjs)
+
+If you are using **Next.js ^12**, you may encounter the following [error](https://github.com/vercel/next.js/issues/28774):
+
+```
+Module build failed: UnhandledSchemeError: Reading from "node:buffer" is not handled by plugins (Unhandled scheme).
+```
+
+Implement the [following workaround](https://github.com/vercel/next.js/issues/28774#issuecomment-1264555395) in your `next.config.js` file:
+
+```
+module.exports = {
+  // Your Next.js config
+  // ...
+  webpack: (config, options) => {
+    config.plugins.push(
+      new webpack.NormalModuleReplacementPlugin(/^node:/, (resource) => {
+        resource.request = resource.request.replace(/^node:/, "");
+      })
+    );
+    return config;
+  },
+};
+```
