@@ -65,13 +65,13 @@ Possible errors:[​](https://developer.litprotocol.com/v3/migration/overview/#u
 
 If you are using **Next.js ^12**, you may encounter the following [error](https://github.com/vercel/next.js/issues/28774):
 
-```
+```sh
 Module build failed: UnhandledSchemeError: Reading from "node:buffer" is not handled by plugins (Unhandled scheme).
 ```
 
 Implement the [following workaround](https://github.com/vercel/next.js/issues/28774#issuecomment-1264555395) in your `next.config.js` file:
 
-```
+```javascript
 module.exports = {
   // Your Next.js config
   // ...
